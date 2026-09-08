@@ -1,0 +1,24 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Apigen.Bunny/Apigen.Bunny.csproj" />
+    <Project Path="src/Apigen.Bunny.Core/Apigen.Bunny.Core.csproj" />
+    <Project Path="src/Apigen.Bunny.Core.Models/Apigen.Bunny.Core.Models.csproj" />
+    <Project Path="src/Apigen.Bunny.OriginErrors/Apigen.Bunny.OriginErrors.csproj" />
+    <Project Path="src/Apigen.Bunny.OriginErrors.Models/Apigen.Bunny.OriginErrors.Models.csproj" />
+    <Project Path="src/Apigen.Bunny.Logging/Apigen.Bunny.Logging.csproj" />
+    <Project Path="src/Apigen.Bunny.Logging.Models/Apigen.Bunny.Logging.Models.csproj" />
+    <Project Path="src/Apigen.Bunny.Storage/Apigen.Bunny.Storage.csproj" />
+    <Project Path="src/Apigen.Bunny.Storage.Models/Apigen.Bunny.Storage.Models.csproj" />
+    <Project Path="src/Apigen.Bunny.Stream/Apigen.Bunny.Stream.csproj" />
+    <Project Path="src/Apigen.Bunny.Stream.Models/Apigen.Bunny.Stream.Models.csproj" />
+    <Project Path="src/Apigen.Bunny.Shield/Apigen.Bunny.Shield.csproj" />
+    <Project Path="src/Apigen.Bunny.Shield.Models/Apigen.Bunny.Shield.Models.csproj" />
+    <Project Path="src/Apigen.Bunny.EdgeScripting/Apigen.Bunny.EdgeScripting.csproj" />
+    <Project Path="src/Apigen.Bunny.EdgeScripting.Models/Apigen.Bunny.EdgeScripting.Models.csproj" />
+    <Project Path="src/Apigen.Bunny.MagicContainers/Apigen.Bunny.MagicContainers.csproj" />
+    <Project Path="src/Apigen.Bunny.MagicContainers.Models/Apigen.Bunny.MagicContainers.Models.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/Apigen.Bunny.Tests/Apigen.Bunny.Tests.csproj" />
+  </Folder>
+</Solution>

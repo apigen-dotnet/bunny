@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" PrivateAssets="all" />
+    <Using Include="Xunit" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(UsePackageReference)' != 'true'">
+    <ProjectReference Include="../../src/Apigen.Bunny.*/*.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(UsePackageReference)' == 'true'">
+    <PackageReference Include="Apigen.Bunny" Version="$(BunnyPackageVersion)" />
+  </ItemGroup>
+  <PropertyGroup Condition="'$(UsePackageReference)' == 'true'">
+    <DefineConstants>$(DefineConstants);PACKAGE_REFERENCE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="../../specs/*.json" Link="TestData/Specs/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../src/**/I*Client.cs" Link="TestData/Interfaces/%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../Apigen.Bunny.slnx" Link="TestData/Apigen.Bunny.slnx" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

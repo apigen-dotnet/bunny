@@ -1,0 +1,33 @@
+enabled = true
+
+[[sources]]
+url = "https://core-api-public-docs.b-cdn.net/docs/v3/public.json"
+target = "specs/core.json"
+
+[[sources]]
+url = "https://bunny.net/docs/api-reference/origin-errors/openapi.json"
+target = "specs/origin-errors.json"
+
+[[sources]]
+url = "https://logging.bunnycdn.com/docs/all/swagger.json"
+target = "specs/logging.json"
+
+[[sources]]
+url = "https://bunny.net/docs/api-reference/storage/openapi.json"
+target = "specs/storage.json"
+
+[[sources]]
+url = "https://video.bunnycdn.com/openapi/bunnynet-video-api.public.json"
+target = "specs/stream.json"
+
+[[sources]]
+url = "https://api.bunny.net/shield/docs/v1/swagger.json"
+target = "specs/shield.json"
+
+[[sources]]
+url = "https://core-api-public-docs.b-cdn.net/docs/v3/compute.json"
+target = "specs/edge-scripting.json"
+
+[[sources]]
+url = "https://api-mc.opsbunny.net/docs/public/swagger.json"
+target = "specs/magic-containers.json"

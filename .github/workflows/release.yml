@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '10.0.x'
+      - name: Verify version matches tag
+        run: |
+          version=$(dotnet msbuild src/Apigen.Bunny/Apigen.Bunny.csproj -getProperty:Version)
+          test "$GITHUB_REF_NAME" = "v$version"
+      - name: Build and test
+        run: dotnet test --configuration Release -warnaserror
+      - name: Pack and verify consumer
+        run: ./tools/verify-package.sh
+      - name: Push to NuGet
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+        run: |
+          : "${NUGET_API_KEY:?NUGET_API_KEY is required}"
+          dotnet nuget push artifacts/packages/*.nupkg --api-key "$NUGET_API_KEY" --source https://api.nuget.org/v3/index.json
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" --verify-tag --generate-notes artifacts/packages/*.nupkg

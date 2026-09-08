@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Apigen.Bunny'">
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);IncludeBunnyAssemblies</TargetsForTfmSpecificBuildOutput>
+  </PropertyGroup>
+  <Target Name="IncludeBunnyAssemblies">
+    <ItemGroup>
+      <BuildOutputInPackage Include="@(ProjectReference->'$(OutputPath)%(Filename).dll')" />
+    </ItemGroup>
+  </Target>
+</Project>

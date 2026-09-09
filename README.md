@@ -68,6 +68,12 @@ The caller owns an injected `HttpClient`.
 Origin Errors additionally exposes `WithJwtAuth`, which sends the JWT as the raw
 `Authorization` header value, as specified by that API.
 
+## Changes in 1.0.2
+
+Regenerated with Apigen.Generator 3.1.0. Enum files now carry generated headers
+so obsolete files can be pruned on subsequent updates. All eight upstream
+specifications were checked on 2026-09-09 and are unchanged from 1.0.1.
+
 ## Changes in 1.0.1
 
 Resource clients implement their matching interfaces across all eight APIs.

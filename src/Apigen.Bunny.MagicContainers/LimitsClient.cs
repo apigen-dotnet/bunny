@@ -28,7 +28,7 @@ namespace Apigen.Bunny.MagicContainers;
 /// <summary>
 /// Client for Limits operations
 /// </summary>
-public partial class LimitsClient
+public partial class LimitsClient : ILimitsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

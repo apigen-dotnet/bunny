@@ -28,7 +28,7 @@ namespace Apigen.Bunny.MagicContainers;
 /// <summary>
 /// Client for Log Forwarding operations
 /// </summary>
-public partial class LogForwardingClient
+public partial class LogForwardingClient : ILogForwardingClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

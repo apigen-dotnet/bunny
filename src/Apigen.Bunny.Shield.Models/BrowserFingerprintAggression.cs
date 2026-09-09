@@ -10,7 +10,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 3 = High
 /// 4 = Custom
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<BrowserFingerprintAggression>))]
 public enum BrowserFingerprintAggression
 {
     Unknown = 0,

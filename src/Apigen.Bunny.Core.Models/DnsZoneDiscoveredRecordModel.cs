@@ -31,7 +31,7 @@ public partial class DnsZoneDiscoveredRecordModel
   /// </summary>
   public string? Name { get; set; }
 
-  public object? Type { get; set; }
+  public DnsZoneDiscoveredRecordType? Type { get; set; }
 
   public int? Ttl { get; set; }
 

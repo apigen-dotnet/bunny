@@ -26,7 +26,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 20 = URLDECODEUNI
 /// 21 = UTF8TOUNICODE
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<WafRuleTransformationType>))]
 public enum WafRuleTransformationType
 {
     Cmdline = 1,

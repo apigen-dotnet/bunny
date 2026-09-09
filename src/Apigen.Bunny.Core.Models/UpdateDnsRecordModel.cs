@@ -26,7 +26,7 @@ namespace Apigen.Bunny.Core.Models;
 /// </summary>
 public partial class UpdateDnsRecordModel
 {
-  public object? Type { get; set; }
+  public DnsRecordTypes? Type { get; set; }
 
   public int? Ttl { get; set; }
 
@@ -50,7 +50,7 @@ public partial class UpdateDnsRecordModel
 
   public bool? Accelerated { get; set; }
 
-  public object? MonitorType { get; set; }
+  public DnsMonitoringType? MonitorType { get; set; }
 
   public double? GeolocationLatitude { get; set; }
 
@@ -58,7 +58,7 @@ public partial class UpdateDnsRecordModel
 
   public string? LatencyZone { get; set; }
 
-  public object? SmartRoutingType { get; set; }
+  public DnsSmartRoutingType? SmartRoutingType { get; set; }
 
   public bool? Disabled { get; set; }
 

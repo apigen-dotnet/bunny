@@ -28,7 +28,7 @@ namespace Apigen.Bunny.MagicContainers;
 /// <summary>
 /// Client for Endpoints operations
 /// </summary>
-public partial class EndpointsClient
+public partial class EndpointsClient : IEndpointsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

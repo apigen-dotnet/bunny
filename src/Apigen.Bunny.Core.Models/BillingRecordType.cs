@@ -13,15 +13,15 @@ namespace Apigen.Bunny.Core.Models;
 /// 6 = BankTransfer
 /// 7 = AffiliateCredits
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<BillingRecordType>))]
 public enum BillingRecordType
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
-    __3 = 3,
-    __4 = 4,
-    __5 = 5,
-    __6 = 6,
-    __7 = 7,
+    PayPal = 0,
+    Crypto = 1,
+    CreditCard = 2,
+    MonthlyUsage = 3,
+    Refund = 4,
+    CouponCode = 5,
+    BankTransfer = 6,
+    AffiliateCredits = 7,
 }

@@ -54,7 +54,7 @@ public partial class BillingRecordModel
   /// <summary>
   /// The type of the billing record. PayPal = 0, Crypto = 1, CreditCard = 2, MonthlyUsage = 3, Refund = 4, CouponCode = 5, BankTransfer = 6, AffiliateCredits = 7
   /// </summary>
-  public object? Type { get; set; }
+  public BillingRecordType? Type { get; set; }
 
   /// <summary>
   /// Determines if an invoice is available

@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Shield;
 /// <summary>
 /// Client for Event Logs operations
 /// </summary>
-public partial class EventLogsClient
+public partial class EventLogsClient : IEventLogsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

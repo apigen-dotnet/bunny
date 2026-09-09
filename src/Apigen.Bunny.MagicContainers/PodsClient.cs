@@ -28,7 +28,7 @@ namespace Apigen.Bunny.MagicContainers;
 /// <summary>
 /// Client for Pods operations
 /// </summary>
-public partial class PodsClient
+public partial class PodsClient : IPodsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for AuditLog operations
 /// </summary>
-public partial class AuditLogClient
+public partial class AuditLogClient : IAuditLogClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Shield;
 /// <summary>
 /// Client for Shield Zone operations
 /// </summary>
-public partial class ShieldZoneClient
+public partial class ShieldZoneClient : IShieldZoneClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

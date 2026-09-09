@@ -9,11 +9,11 @@ namespace Apigen.Bunny.Core.Models;
 /// 2 = Completed
 /// 3 = Failed
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<DnsZoneScanJobStatus>))]
 public enum DnsZoneScanJobStatus
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
-    __3 = 3,
+    Pending = 0,
+    InProgress = 1,
+    Completed = 2,
+    Failed = 3,
 }

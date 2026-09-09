@@ -9,11 +9,11 @@ namespace Apigen.Bunny.Core.Models;
 /// 2 = L2
 /// 3 = L3
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<WidevineMinClientSecurityLevel>))]
 public enum WidevineMinClientSecurityLevel
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
-    __3 = 3,
+    None = 0,
+    L1 = 1,
+    L2 = 2,
+    L3 = 3,
 }

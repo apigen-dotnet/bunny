@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for Pull Zone operations
 /// </summary>
-public partial class PullZoneClient
+public partial class PullZoneClient : IPullZoneClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

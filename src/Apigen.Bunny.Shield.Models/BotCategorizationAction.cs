@@ -9,7 +9,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 2 = Allow
 /// 3 = Ignore
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<BotCategorizationAction>))]
 public enum BotCategorizationAction
 {
     None = 0,

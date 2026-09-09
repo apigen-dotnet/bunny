@@ -28,7 +28,7 @@ namespace Apigen.Bunny.MagicContainers;
 /// <summary>
 /// Client for ContainerRegistries operations
 /// </summary>
-public partial class ContainerRegistriesClient
+public partial class ContainerRegistriesClient : IContainerRegistriesClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

@@ -36,5 +36,5 @@ public partial class GoogleWidevineDrm
 
   public bool? SdOnlyForL3 { get; set; }
 
-  public object? MinClientSecurityLevel { get; set; }
+  public WidevineMinClientSecurityLevel? MinClientSecurityLevel { get; set; }
 }

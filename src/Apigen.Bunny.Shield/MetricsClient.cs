@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Shield;
 /// <summary>
 /// Client for Metrics operations
 /// </summary>
-public partial class MetricsClient
+public partial class MetricsClient : IMetricsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

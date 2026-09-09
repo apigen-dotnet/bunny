@@ -8,10 +8,10 @@ namespace Apigen.Bunny.Core.Models;
 /// 1 = Latency
 /// 2 = Geolocation
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<DnsSmartRoutingType>))]
 public enum DnsSmartRoutingType
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
+    None = 0,
+    Latency = 1,
+    Geolocation = 2,
 }

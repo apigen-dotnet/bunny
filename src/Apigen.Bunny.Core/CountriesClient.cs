@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for Countries operations
 /// </summary>
-public partial class CountriesClient
+public partial class CountriesClient : ICountriesClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

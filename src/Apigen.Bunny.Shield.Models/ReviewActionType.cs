@@ -8,7 +8,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 1 = LogOnly
 /// 2 = DisableRule
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<ReviewActionType>))]
 public enum ReviewActionType
 {
     Ignore = 0,

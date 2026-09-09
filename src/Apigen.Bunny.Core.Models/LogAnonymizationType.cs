@@ -7,9 +7,9 @@ namespace Apigen.Bunny.Core.Models;
 /// 0 = OneDigit
 /// 1 = Drop
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<LogAnonymizationType>))]
 public enum LogAnonymizationType
 {
-    __0 = 0,
-    __1 = 1,
+    OneDigit = 0,
+    Drop = 1,
 }

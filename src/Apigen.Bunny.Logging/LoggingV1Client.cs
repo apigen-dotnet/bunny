@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Logging;
 /// <summary>
 /// Client for Logging v1 operations
 /// </summary>
-public partial class LoggingV1Client
+public partial class LoggingV1Client : ILoggingV1Client
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

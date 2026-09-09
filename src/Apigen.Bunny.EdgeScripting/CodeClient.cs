@@ -28,7 +28,7 @@ namespace Apigen.Bunny.EdgeScripting;
 /// <summary>
 /// Client for Code operations
 /// </summary>
-public partial class CodeClient
+public partial class CodeClient : ICodeClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

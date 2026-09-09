@@ -30,7 +30,7 @@ public partial class VideoPlayDataModel
   /// Video data.
   /// </summary>
   [System.Text.Json.Serialization.JsonPropertyName("video")]
-  public object? Video { get; set; }
+  public VideoModel? Video { get; set; }
 
   [System.Text.Json.Serialization.JsonPropertyName("libraryName")]
   public string? LibraryName { get; set; }
@@ -138,7 +138,7 @@ public partial class VideoPlayDataModel
   /// Preferred playback source for the current video state.
   /// </summary>
   [System.Text.Json.Serialization.JsonPropertyName("preferredPlaybackSource")]
-  public object? PreferredPlaybackSource { get; set; }
+  public VideoPlaybackSource? PreferredPlaybackSource { get; set; }
 
   [System.Text.Json.Serialization.JsonPropertyName("rememberPlayerPosition")]
   public bool? RememberPlayerPosition { get; set; }

@@ -7,9 +7,9 @@ namespace Apigen.Bunny.Core.Models;
 /// 0 = NotSupported
 /// 1 = Supported
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<StorageZoneS3Type>))]
 public enum StorageZoneS3Type
 {
-    __0 = 0,
-    __1 = 1,
+    NotSupported = 0,
+    Supported = 1,
 }

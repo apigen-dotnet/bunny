@@ -30,23 +30,23 @@ public partial class SmartGenerateFeaturesStatusModel
   /// Smart generate status for the video title, when applicable.
   /// </summary>
   [System.Text.Json.Serialization.JsonPropertyName("title")]
-  public object? Title { get; set; }
+  public SmartGenerateStatus? Title { get; set; }
 
   /// <summary>
   /// Smart generate status for the video description, when applicable.
   /// </summary>
   [System.Text.Json.Serialization.JsonPropertyName("description")]
-  public object? Description { get; set; }
+  public SmartGenerateStatus? Description { get; set; }
 
   /// <summary>
   /// Smart generate status for chapters, when applicable.
   /// </summary>
   [System.Text.Json.Serialization.JsonPropertyName("chapters")]
-  public object? Chapters { get; set; }
+  public SmartGenerateStatus? Chapters { get; set; }
 
   /// <summary>
   /// Smart generate status for moments, when applicable.
   /// </summary>
   [System.Text.Json.Serialization.JsonPropertyName("moments")]
-  public object? Moments { get; set; }
+  public SmartGenerateStatus? Moments { get; set; }
 }

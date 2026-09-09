@@ -8,10 +8,10 @@ namespace Apigen.Bunny.Core.Models;
 /// 1 = Online
 /// 2 = Offline
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<DnsMonitoringStatus>))]
 public enum DnsMonitoringStatus
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
+    Unknown = 0,
+    Online = 1,
+    Offline = 2,
 }

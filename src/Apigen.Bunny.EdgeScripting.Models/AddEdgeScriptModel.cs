@@ -42,5 +42,5 @@ public partial class AddEdgeScriptModel
 
   public string? LinkedPullZoneName { get; set; }
 
-  public object? Integration { get; set; }
+  public SourceCodeIntegrationModel? Integration { get; set; }
 }

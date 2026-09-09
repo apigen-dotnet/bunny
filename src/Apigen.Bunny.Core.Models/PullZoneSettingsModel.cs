@@ -77,7 +77,7 @@ public partial class PullZoneSettingsModel
   /// <summary>
   /// Address-family policy: 0=IPv4Only, 1=DualStack (default, best latency and compatibility), 2=DualStackPreferIPv6, 3=IPv6Only.
   /// </summary>
-  public object? IpFamilyPolicy { get; set; }
+  public IpFamilyPolicy? IpFamilyPolicy { get; set; }
 
   /// <summary>
   /// Determines if the zone should block requests to the root of the zone.
@@ -217,7 +217,7 @@ public partial class PullZoneSettingsModel
   /// <summary>
   /// Determines Perma-Cache behavior
   /// </summary>
-  public object? PermaCacheType { get; set; }
+  public PermaCacheType? PermaCacheType { get; set; }
 
   /// <summary>
   /// Determines if the AWS signing should be enabled or not
@@ -268,7 +268,7 @@ public partial class PullZoneSettingsModel
   /// <summary>
   /// The minimum TLS security level enforced on this zone (Legacy = 0, Compatible = 1, ModernOnly = 2)
   /// </summary>
-  public object? TlsSecurityLevel { get; set; }
+  public TlsSecurityLevelType? TlsSecurityLevel { get; set; }
 
   /// <summary>
   /// Determines if the cache error responses should be enabled on the zone
@@ -304,7 +304,7 @@ public partial class PullZoneSettingsModel
   /// <summary>
   /// Sets the log forwarding protocol type
   /// </summary>
-  public object? LogForwardingProtocol { get; set; }
+  public PullZoneLogForwarderProtocolType? LogForwardingProtocol { get; set; }
 
   /// <summary>
   /// Determines if the logging permanent storage should be enabled
@@ -423,7 +423,7 @@ public partial class PullZoneSettingsModel
   /// <summary>
   /// Determines if Markdown automatic generation for AI systems is enabled and which pipeline to use
   /// </summary>
-  public object? OptimizerHtmlToMarkdown { get; set; }
+  public OptimizerHtmlToMarkdownType? OptimizerHtmlToMarkdown { get; set; }
 
   /// <summary>
   /// Determines if the llms.txt file can be generated and served by the Optimizer
@@ -459,7 +459,7 @@ public partial class PullZoneSettingsModel
   /// <summary>
   /// Sets the position of the watermark image
   /// </summary>
-  public object? OptimizerWatermarkPosition { get; set; }
+  public OptimizerWatermarkPosition? OptimizerWatermarkPosition { get; set; }
 
   /// <summary>
   /// Sets the offset of the watermark image
@@ -504,7 +504,7 @@ public partial class PullZoneSettingsModel
   /// <summary>
   /// The type of the pull zone. Premium = 0, Volume = 1
   /// </summary>
-  public object? Type { get; set; }
+  public PullZoneType? Type { get; set; }
 
   /// <summary>
   /// The number of retries to the origin server
@@ -614,7 +614,7 @@ public partial class PullZoneSettingsModel
   /// <summary>
   /// Sets the log anonymization type for this pull zone
   /// </summary>
-  public object? LogAnonymizationType { get; set; }
+  public LogAnonymizationType? LogAnonymizationType { get; set; }
 
   /// <summary>
   /// The ID of the storage zone that will be used as the origin
@@ -634,22 +634,22 @@ public partial class PullZoneSettingsModel
   /// <summary>
   /// The execution phase of the edge script
   /// </summary>
-  public object? EdgeScriptExecutionPhase { get; set; }
+  public ExecutionPhase? EdgeScriptExecutionPhase { get; set; }
 
   /// <summary>
   /// Determine the type of the origin for this Pull Zone
   /// </summary>
-  public object? OriginType { get; set; }
+  public PullZoneOriginType? OriginType { get; set; }
 
   public string? MagicContainersAppId { get; set; }
 
   public string? MagicContainersEndpointId { get; set; }
 
-  public object? LogFormat { get; set; }
+  public PullZoneLogFormat? LogFormat { get; set; }
 
-  public object? LogForwardingFormat { get; set; }
+  public PullZoneLogFormat? LogForwardingFormat { get; set; }
 
-  public object? ShieldDDosProtectionType { get; set; }
+  public ShieldDDosProtectionType? ShieldDDosProtectionType { get; set; }
 
   public bool? ShieldDDosProtectionEnabled { get; set; }
 
@@ -702,7 +702,7 @@ public partial class PullZoneSettingsModel
   /// <summary>
   /// The currently configured preloading screem theme. (0 - Light, 1 - Dark)
   /// </summary>
-  public object? PreloadingScreenTheme { get; set; }
+  public PreloadingScreenTheme? PreloadingScreenTheme { get; set; }
 
   /// <summary>
   /// Determines if the custom preloader screen should be enabled
@@ -723,7 +723,7 @@ public partial class PullZoneSettingsModel
   /// <summary>
   /// Whether to use a Sticky Session mechanism for this pull zone
   /// </summary>
-  public object? StickySessionType { get; set; }
+  public StickySessionType? StickySessionType { get; set; }
 
   /// <summary>
   /// Sticky Session Cookie Name

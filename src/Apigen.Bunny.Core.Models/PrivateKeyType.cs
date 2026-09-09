@@ -7,9 +7,9 @@ namespace Apigen.Bunny.Core.Models;
 /// 0 = Ecdsa
 /// 1 = Rsa
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<PrivateKeyType>))]
 public enum PrivateKeyType
 {
-    __0 = 0,
-    __1 = 1,
+    Ecdsa = 0,
+    Rsa = 1,
 }

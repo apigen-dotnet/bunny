@@ -13,7 +13,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 6 = JA4
 /// 7 = IP_JA4
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<WafRatelimitCounterKeyType>))]
 public enum WafRatelimitCounterKeyType
 {
     IP = 0,

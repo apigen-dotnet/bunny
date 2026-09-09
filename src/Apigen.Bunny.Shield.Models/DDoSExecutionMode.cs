@@ -7,7 +7,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 0 = Log
 /// 1 = Block
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<DDoSExecutionMode>))]
 public enum DDoSExecutionMode
 {
     Log = 0,

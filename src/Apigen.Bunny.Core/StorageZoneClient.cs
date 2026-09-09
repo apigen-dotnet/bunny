@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for Storage Zone operations
 /// </summary>
-public partial class StorageZoneClient
+public partial class StorageZoneClient : IStorageZoneClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

@@ -29,7 +29,7 @@ public partial class Trigger
   /// <summary>
   /// The type of the trigger. Url = 0, RequestHeader = 1, ResponseHeader = 2, UrlExtension = 3, CountryCode = 4, RemoteIP = 5, UrlQueryString = 6, RandomChance = 7
   /// </summary>
-  public object? Type { get; set; }
+  public TriggerTypes? Type { get; set; }
 
   /// <summary>
   /// The list of pattern matches that will trigger the edge rule
@@ -39,7 +39,7 @@ public partial class Trigger
   /// <summary>
   /// The type of pattern matching. MatchAny = 0, MatchAll = 1, MatchNone = 2
   /// </summary>
-  public object? PatternMatchingType { get; set; }
+  public PatternMatchingTypes? PatternMatchingType { get; set; }
 
   /// <summary>
   /// The trigger parameter 1. The value depends on the type of trigger.

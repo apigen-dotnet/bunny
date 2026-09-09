@@ -11,7 +11,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 1800 = ForThirtyMinutes
 /// 3600 = ForOneHour
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<WafRatelimitBlockType>))]
 public enum WafRatelimitBlockType
 {
     ForThirtySeconds = 30,

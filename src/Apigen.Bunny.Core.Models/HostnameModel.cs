@@ -70,10 +70,10 @@ public partial class HostnameModel
   /// <summary>
   /// The private key type to use for automatic certificates
   /// </summary>
-  public object? CertificateKeyType { get; set; }
+  public PrivateKeyType? CertificateKeyType { get; set; }
 
   /// <summary>
   /// The provisioned certificate type
   /// </summary>
-  public object? CertificateProvisionType { get; set; }
+  public CertificateProvisionType? CertificateProvisionType { get; set; }
 }

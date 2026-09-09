@@ -11,7 +11,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 4 = Log
 /// 5 = Bypass
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<AccessListAction>))]
 public enum AccessListAction
 {
     None = 0,

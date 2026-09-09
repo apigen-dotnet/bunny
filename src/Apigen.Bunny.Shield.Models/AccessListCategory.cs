@@ -20,7 +20,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 4096 = PagePreview
 /// 8192 = InternetTools
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<AccessListCategory>))]
 public enum AccessListCategory
 {
     None = 0,

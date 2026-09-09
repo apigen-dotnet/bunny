@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for Search operations
 /// </summary>
-public partial class SearchClient
+public partial class SearchClient : ISearchClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

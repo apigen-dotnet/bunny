@@ -9,7 +9,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 2 = Business
 /// 3 = Enterprise
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<ShieldPlanType>))]
 public enum ShieldPlanType
 {
     Basic = 0,

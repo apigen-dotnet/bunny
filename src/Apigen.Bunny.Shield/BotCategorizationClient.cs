@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Shield;
 /// <summary>
 /// Client for Bot Categorization operations
 /// </summary>
-public partial class BotCategorizationClient
+public partial class BotCategorizationClient : IBotCategorizationClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

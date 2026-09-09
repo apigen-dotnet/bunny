@@ -8,7 +8,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 1 = WARNING
 /// 2 = CRITICAL
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<WafRuleSeverityType>))]
 public enum WafRuleSeverityType
 {
     Notice = 0,

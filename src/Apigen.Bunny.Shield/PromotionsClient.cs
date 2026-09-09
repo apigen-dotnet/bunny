@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Shield;
 /// <summary>
 /// Client for Promotions operations
 /// </summary>
-public partial class PromotionsClient
+public partial class PromotionsClient : IPromotionsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

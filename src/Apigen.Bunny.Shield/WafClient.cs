@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Shield;
 /// <summary>
 /// Client for WAF operations
 /// </summary>
-public partial class WafClient
+public partial class WafClient : IWafClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

@@ -7,9 +7,9 @@ namespace Apigen.Bunny.Core.Models;
 /// 0 = Off
 /// 1 = Simple
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<OptimizerHtmlToMarkdownType>))]
 public enum OptimizerHtmlToMarkdownType
 {
-    __0 = 0,
-    __1 = 1,
+    Off = 0,
+    Simple = 1,
 }

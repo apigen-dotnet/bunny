@@ -68,6 +68,34 @@ The caller owns an injected `HttpClient`.
 Origin Errors additionally exposes `WithJwtAuth`, which sends the JWT as the raw
 `Authorization` header value, as specified by that API.
 
+## Changes in 1.0.1
+
+Resource clients implement their matching interfaces across all eight APIs.
+Integer enums serialize as JSON numbers, and enum members use names from the
+schema's `x-enumNames` metadata. Nullable schema references now produce typed
+properties, including `DnsRecordTypes?` for DNS add/update requests.
+
+When upgrading from 1.0.0, replace `DnsRecordTypes.__0` or integer request values
+with `DnsRecordTypes.A` (or explicitly cast an integer to `DnsRecordTypes`). Other
+numeric enums can also have new member names. For example:
+
+```csharp
+using Apigen.Bunny.Core;
+using Apigen.Bunny.Core.Models;
+
+using var core = BunnyCoreClient.WithAccessKey(
+    Environment.GetEnvironmentVariable("BUNNY_API_KEY")!);
+IDnsZoneClient dns = core.DnsZone;
+await dns.PublicAddRecordAsync(42, new()
+{
+    Type = DnsRecordTypes.A,
+    Name = "www",
+    Value = "192.0.2.1"
+});
+```
+
+Leaving `Type` null omits it from the request; assigning `A` sends `"Type":0`.
+
 ## Regeneration
 
 The [superproject](https://github.com/apigen-dotnet/apigen-dotnet) pins the

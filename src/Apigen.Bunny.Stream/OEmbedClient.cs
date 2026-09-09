@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Stream;
 /// <summary>
 /// Client for OEmbed operations
 /// </summary>
-public partial class OEmbedClient
+public partial class OEmbedClient : IOEmbedClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

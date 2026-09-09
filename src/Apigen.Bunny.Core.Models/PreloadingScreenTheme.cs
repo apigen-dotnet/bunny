@@ -7,9 +7,9 @@ namespace Apigen.Bunny.Core.Models;
 /// 0 = Light
 /// 1 = Dark
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<PreloadingScreenTheme>))]
 public enum PreloadingScreenTheme
 {
-    __0 = 0,
-    __1 = 1,
+    Light = 0,
+    Dark = 1,
 }

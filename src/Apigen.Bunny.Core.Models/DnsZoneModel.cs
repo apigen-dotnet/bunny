@@ -58,7 +58,7 @@ public partial class DnsZoneModel
   /// <summary>
   /// Sets the log anonymization type for this zone
   /// </summary>
-  public object? LogAnonymizationType { get; set; }
+  public LogAnonymizationType? LogAnonymizationType { get; set; }
 
   /// <summary>
   /// Determines if DNSSEC is enabled for this DNS Zone
@@ -68,5 +68,5 @@ public partial class DnsZoneModel
   /// <summary>
   /// The private key type to use for automatic certificates
   /// </summary>
-  public object? CertificateKeyType { get; set; }
+  public PrivateKeyType? CertificateKeyType { get; set; }
 }

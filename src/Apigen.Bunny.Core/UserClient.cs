@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for User operations
 /// </summary>
-public partial class UserClient
+public partial class UserClient : IUserClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

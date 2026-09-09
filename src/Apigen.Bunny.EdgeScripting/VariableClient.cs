@@ -28,7 +28,7 @@ namespace Apigen.Bunny.EdgeScripting;
 /// <summary>
 /// Client for Variable operations
 /// </summary>
-public partial class VariableClient
+public partial class VariableClient : IVariableClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

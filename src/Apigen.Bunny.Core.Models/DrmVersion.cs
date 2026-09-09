@@ -8,10 +8,10 @@ namespace Apigen.Bunny.Core.Models;
 /// 1 = Enterprise
 /// 2 = BasicV2
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<DrmVersion>))]
 public enum DrmVersion
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
+    Basic = 0,
+    Enterprise = 1,
+    BasicV2 = 2,
 }

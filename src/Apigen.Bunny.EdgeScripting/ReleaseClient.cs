@@ -28,7 +28,7 @@ namespace Apigen.Bunny.EdgeScripting;
 /// <summary>
 /// Client for Release operations
 /// </summary>
-public partial class ReleaseClient
+public partial class ReleaseClient : IReleaseClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

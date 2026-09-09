@@ -39,12 +39,12 @@ public partial class UpdateDnsZoneModel
   /// <summary>
   /// Gets the log anonymization type for this zone
   /// </summary>
-  public object? LogAnonymizationType { get; set; }
+  public LogAnonymizationType? LogAnonymizationType { get; set; }
 
   /// <summary>
   /// Sets the certificate private key type for wildcard certificates for this zone
   /// </summary>
-  public object? CertificateKeyType { get; set; }
+  public PrivateKeyType? CertificateKeyType { get; set; }
 
   /// <summary>
   /// Determines if the log anonoymization should be enabled

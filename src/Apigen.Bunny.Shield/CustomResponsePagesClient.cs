@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Shield;
 /// <summary>
 /// Client for Custom Response Pages operations
 /// </summary>
-public partial class CustomResponsePagesClient
+public partial class CustomResponsePagesClient : ICustomResponsePagesClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

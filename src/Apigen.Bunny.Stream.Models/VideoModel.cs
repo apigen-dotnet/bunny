@@ -89,7 +89,7 @@ public partial class VideoModel
   /// </summary>
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("status")]
-  public object? Status { get; set; }
+  public VideoModelStatus Status { get; set; } = null!;
 
   /// <summary>
   /// The framerate of the video
@@ -241,13 +241,13 @@ public partial class VideoModel
   /// Aggregate smart generate status derived from per-feature statuses when present: InProgress, then Queued, then Failed, then Finished; otherwise the stored legacy value. See SmartGenerateFeaturesStatus.
   /// </summary>
   [System.Text.Json.Serialization.JsonPropertyName("smartGenerateStatus")]
-  public object? SmartGenerateStatus { get; set; }
+  public SmartGenerateStatus? SmartGenerateStatus { get; set; }
 
   /// <summary>
   /// Per-feature smart generate statuses (title, description, chapters, moments). Null for a feature on legacy rows.
   /// </summary>
   [System.Text.Json.Serialization.JsonPropertyName("smartGenerateFeaturesStatus")]
-  public object? SmartGenerateFeaturesStatus { get; set; }
+  public SmartGenerateFeaturesStatusModel? SmartGenerateFeaturesStatus { get; set; }
 
   /// <summary>
   /// Determines if video has the original file available in storage

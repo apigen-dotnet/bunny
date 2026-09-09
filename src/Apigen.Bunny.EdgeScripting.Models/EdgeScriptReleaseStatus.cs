@@ -7,9 +7,9 @@ namespace Apigen.Bunny.EdgeScripting.Models;
 /// 0 = Archived
 /// 1 = Live
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<EdgeScriptReleaseStatus>))]
 public enum EdgeScriptReleaseStatus
 {
-    __0 = 0,
-    __1 = 1,
+    Archived = 0,
+    Live = 1,
 }

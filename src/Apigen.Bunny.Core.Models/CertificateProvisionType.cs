@@ -10,12 +10,12 @@ namespace Apigen.Bunny.Core.Models;
 /// 3 = Custom
 /// 4 = Managed
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<CertificateProvisionType>))]
 public enum CertificateProvisionType
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
-    __3 = 3,
-    __4 = 4,
+    Unknown = 0,
+    Http01 = 1,
+    Dns01 = 2,
+    Custom = 3,
+    Managed = 4,
 }

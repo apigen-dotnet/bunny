@@ -28,7 +28,7 @@ namespace Apigen.Bunny.OriginErrors;
 /// <summary>
 /// Client for OriginErrors operations
 /// </summary>
-public partial class OriginErrorsClient
+public partial class OriginErrorsClient : IOriginErrorsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

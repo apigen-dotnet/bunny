@@ -26,7 +26,7 @@ namespace Apigen.Bunny.Core.Models;
 /// </summary>
 public partial class LoadBalancerStatisticsModel
 {
-  public object? Summary { get; set; }
+  public LoadBalancerStatisticsSummaryModel? Summary { get; set; }
 
   public List<LoadBalancerOriginRequestsSeriesModel>? RequestsByOrigin { get; set; }
 

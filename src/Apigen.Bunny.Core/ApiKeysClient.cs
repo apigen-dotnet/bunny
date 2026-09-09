@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for API Keys operations
 /// </summary>
-public partial class ApiKeysClient
+public partial class ApiKeysClient : IApiKeysClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

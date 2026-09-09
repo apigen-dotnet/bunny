@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Stream;
 /// <summary>
 /// Client for Manage Collections operations
 /// </summary>
-public partial class ManageCollectionsClient
+public partial class ManageCollectionsClient : IManageCollectionsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

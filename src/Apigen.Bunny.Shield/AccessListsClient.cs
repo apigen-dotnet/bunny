@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Shield;
 /// <summary>
 /// Client for Access Lists operations
 /// </summary>
-public partial class AccessListsClient
+public partial class AccessListsClient : IAccessListsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

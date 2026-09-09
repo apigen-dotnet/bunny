@@ -8,10 +8,10 @@ namespace Apigen.Bunny.Core.Models;
 /// 1 = ActiveStandard
 /// 2 = ActiveAggressive
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<ShieldDDosProtectionType>))]
 public enum ShieldDDosProtectionType
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
+    DetectOnly = 0,
+    ActiveStandard = 1,
+    ActiveAggressive = 2,
 }

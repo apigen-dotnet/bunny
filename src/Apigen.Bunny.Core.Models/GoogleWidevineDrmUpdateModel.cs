@@ -39,5 +39,5 @@ public partial class GoogleWidevineDrmUpdateModel
   /// <summary>
   /// (Optional) Minimum Client Security Level (1 being most secure, 3 least secure and is default)
   /// </summary>
-  public object? MinClientSecurityLevel { get; set; }
+  public WidevineMinClientSecurityLevel? MinClientSecurityLevel { get; set; }
 }

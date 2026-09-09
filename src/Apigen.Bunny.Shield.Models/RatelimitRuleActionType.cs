@@ -8,7 +8,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 2 = Log
 /// 3 = Challenge
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<RatelimitRuleActionType>))]
 public enum RatelimitRuleActionType
 {
     RateLimit = 1,

@@ -8,10 +8,10 @@ namespace Apigen.Bunny.EdgeScripting.Models;
 /// 1 = CDN
 /// 2 = Middleware
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<EdgeScriptTypes>))]
 public enum EdgeScriptTypes
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
+    Dns = 0,
+    Cdn = 1,
+    Middleware = 2,
 }

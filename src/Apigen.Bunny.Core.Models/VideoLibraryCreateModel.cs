@@ -46,7 +46,7 @@ public partial class VideoLibraryCreateModel
   /// <summary>
   /// (Optional) Defines encoding tier. Premium is a paid tier that offers prioritized encoding and extra codec support.
   /// </summary>
-  public object? EncodingTier { get; set; }
+  public EncodingTier? EncodingTier { get; set; }
 
   /// <summary>
   /// (Optional) Determines whether JIT encoding should be used for the library. Supported in premium encoding only.

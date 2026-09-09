@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for Affiliate operations
 /// </summary>
-public partial class AffiliateClient
+public partial class AffiliateClient : IAffiliateClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

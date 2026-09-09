@@ -11,13 +11,13 @@ namespace Apigen.Bunny.Core.Models;
 /// 4 = Center
 /// 5 = CenterStretch
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<OptimizerWatermarkPosition>))]
 public enum OptimizerWatermarkPosition
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
-    __3 = 3,
-    __4 = 4,
-    __5 = 5,
+    BottomLeft = 0,
+    BottomRight = 1,
+    TopLeft = 2,
+    TopRight = 3,
+    Center = 4,
+    CenterStretch = 5,
 }

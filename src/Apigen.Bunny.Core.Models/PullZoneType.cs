@@ -7,9 +7,9 @@ namespace Apigen.Bunny.Core.Models;
 /// 0 = Premium
 /// 1 = Volume
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<PullZoneType>))]
 public enum PullZoneType
 {
-    __0 = 0,
-    __1 = 1,
+    Premium = 0,
+    Volume = 1,
 }

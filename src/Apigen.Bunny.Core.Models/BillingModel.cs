@@ -166,32 +166,32 @@ public partial class BillingModel
   /// <summary>
   /// The monthly charges and usage for Magic Containers CPU
   /// </summary>
-  public object? MonthlyMcCpu { get; set; }
+  public UsageBreakdown? MonthlyMcCpu { get; set; }
 
   /// <summary>
   /// The monthly charges and usage for Magic Containers Memory
   /// </summary>
-  public object? MonthlyMcMemory { get; set; }
+  public UsageBreakdown? MonthlyMcMemory { get; set; }
 
   /// <summary>
   /// The monthly charges and usage for Magic Containers Anycast IP
   /// </summary>
-  public object? MonthlyMcIp { get; set; }
+  public UsageBreakdown? MonthlyMcIp { get; set; }
 
   /// <summary>
   /// The monthly charges and usage for Magic Containers Ingress Traffic
   /// </summary>
-  public object? MonthlyMcIngressTraffic { get; set; }
+  public UsageBreakdown? MonthlyMcIngressTraffic { get; set; }
 
   /// <summary>
   /// The monthly charges and usage for Magic Containers Egress Traffic
   /// </summary>
-  public object? MonthlyMcEgressTraffic { get; set; }
+  public UsageBreakdown? MonthlyMcEgressTraffic { get; set; }
 
   /// <summary>
   /// The monthly charges and usage for Magic Containers Persistent Volumes
   /// </summary>
-  public object? MonthlyMcVolumes { get; set; }
+  public UsageBreakdown? MonthlyMcVolumes { get; set; }
 
   /// <summary>
   /// The total monthly charges for Shield
@@ -223,25 +223,25 @@ public partial class BillingModel
   /// The monthly charges and usage for BunnyDB row writes
   /// </summary>
   [System.Text.Json.Serialization.JsonPropertyName("MonthlyDBWrites")]
-  public object? MonthlyDbWrites { get; set; }
+  public UsageBreakdown? MonthlyDbWrites { get; set; }
 
   /// <summary>
   /// The monthly charges and usage for BunnyDB row reads
   /// </summary>
   [System.Text.Json.Serialization.JsonPropertyName("MonthlyDBReads")]
-  public object? MonthlyDbReads { get; set; }
+  public UsageBreakdown? MonthlyDbReads { get; set; }
 
   /// <summary>
   /// The monthly charges and usage for BunnyDB storage
   /// </summary>
   [System.Text.Json.Serialization.JsonPropertyName("MonthlyDBStorage")]
-  public object? MonthlyDbStorage { get; set; }
+  public UsageBreakdown? MonthlyDbStorage { get; set; }
 
   /// <summary>
   /// The monthly charges and usage for BunnyDB replica storage
   /// </summary>
   [System.Text.Json.Serialization.JsonPropertyName("MonthlyDBReplica")]
-  public object? MonthlyDbReplica { get; set; }
+  public UsageBreakdown? MonthlyDbReplica { get; set; }
 
   /// <summary>
   /// The total monthly charges for AI Gateway
@@ -251,17 +251,17 @@ public partial class BillingModel
   /// <summary>
   /// The monthly charges and usage for AI Gateway input tokens
   /// </summary>
-  public object? MonthlyAiGatewayInputTokens { get; set; }
+  public UsageBreakdown? MonthlyAiGatewayInputTokens { get; set; }
 
   /// <summary>
   /// The monthly charges and usage for AI Gateway output tokens
   /// </summary>
-  public object? MonthlyAiGatewayOutputTokens { get; set; }
+  public UsageBreakdown? MonthlyAiGatewayOutputTokens { get; set; }
 
   /// <summary>
   /// The monthly charges and usage for AI Gateway cached tokens
   /// </summary>
-  public object? MonthlyAiGatewayCachedTokens { get; set; }
+  public UsageBreakdown? MonthlyAiGatewayCachedTokens { get; set; }
 
   /// <summary>
   /// Total bandwidth used by the account during this month.

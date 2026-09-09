@@ -156,7 +156,7 @@ public partial class VideoLibraryUpdateModel
   /// <summary>
   /// (Optional) Determines MediaCage DRM version to be used for this library
   /// </summary>
-  public object? DrmVersion { get; set; }
+  public DrmVersion? DrmVersion { get; set; }
 
   /// <summary>
   /// (Optional) The comma separated list of controls that will be displayed in the video player. Possible values: play-large, play, progress, current-time, mute, volume, captions, settings, pip, airplay, fullscreen.
@@ -283,7 +283,7 @@ public partial class VideoLibraryUpdateModel
   /// <summary>
   /// (Optional) Defines encoding tier to be used with video library. premium is a paid tier that offers either JIT encoding or prioritized encoding and extra codec support.
   /// </summary>
-  public object? EncodingTier { get; set; }
+  public EncodingTier? EncodingTier { get; set; }
 
   /// <summary>
   /// (Optional) Specifies which video codecs are used for encoding, provided as a comma-separated (CSV) string. Free encoding tier supports only x264. A premium encoding tier adds support for vp9, hevc, and av1.
@@ -293,12 +293,12 @@ public partial class VideoLibraryUpdateModel
   /// <summary>
   /// (Optional) Configure Apple FairPlay DRM. Works only if Enterprise DRM is set up.
   /// </summary>
-  public object? AppleFairPlayDrm { get; set; }
+  public AppleFairPlayDrmUpdateModel? AppleFairPlayDrm { get; set; }
 
   /// <summary>
   /// (Optional) Configure Google Widevine DRM. Works only if Enterprise DRM is set up.
   /// </summary>
-  public object? GoogleWidevineDrm { get; set; }
+  public GoogleWidevineDrmUpdateModel? GoogleWidevineDrm { get; set; }
 
   /// <summary>
   /// (Optional) Sets player version used for this library

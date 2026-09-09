@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Shield;
 /// <summary>
 /// Client for Bot Detection operations
 /// </summary>
-public partial class BotDetectionClient
+public partial class BotDetectionClient : IBotDetectionClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

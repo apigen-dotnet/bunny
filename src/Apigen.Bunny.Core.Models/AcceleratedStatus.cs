@@ -10,12 +10,12 @@ namespace Apigen.Bunny.Core.Models;
 /// 3 = Completed
 /// 4 = Failed
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<AcceleratedStatus>))]
 public enum AcceleratedStatus
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
-    __3 = 3,
-    __4 = 4,
+    None = 0,
+    Pending = 1,
+    Processing = 2,
+    Completed = 3,
+    Failed = 4,
 }

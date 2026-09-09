@@ -70,9 +70,9 @@ public partial class DnsRecordModel
 
   public string? LinkName { get; set; }
 
-  public object? IPGeoLocationInfo { get; set; }
+  public GeoDnsLocationModel? IPGeoLocationInfo { get; set; }
 
-  public object? GeolocationInfo { get; set; }
+  public DnsRecordGeoLocationInfo? GeolocationInfo { get; set; }
 
   /// <summary>
   /// 0 = Unknown

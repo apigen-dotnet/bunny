@@ -7,9 +7,9 @@ namespace Apigen.Bunny.Core.Models;
 /// 0 = Off
 /// 1 = On
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<StickySessionType>))]
 public enum StickySessionType
 {
-    __0 = 0,
-    __1 = 1,
+    Off = 0,
+    On = 1,
 }

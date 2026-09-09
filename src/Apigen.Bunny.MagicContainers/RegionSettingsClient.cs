@@ -28,7 +28,7 @@ namespace Apigen.Bunny.MagicContainers;
 /// <summary>
 /// Client for RegionSettings operations
 /// </summary>
-public partial class RegionSettingsClient
+public partial class RegionSettingsClient : IRegionSettingsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

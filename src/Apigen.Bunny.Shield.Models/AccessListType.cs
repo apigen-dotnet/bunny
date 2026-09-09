@@ -11,7 +11,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 4 = Organization
 /// 5 = JA4
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<AccessListType>))]
 public enum AccessListType
 {
     IP = 0,

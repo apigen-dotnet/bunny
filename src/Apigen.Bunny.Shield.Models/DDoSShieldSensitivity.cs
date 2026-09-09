@@ -10,7 +10,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 3 = High
 /// 4 = Challenge
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<DDoSShieldSensitivity>))]
 public enum DDoSShieldSensitivity
 {
     Off = 0,

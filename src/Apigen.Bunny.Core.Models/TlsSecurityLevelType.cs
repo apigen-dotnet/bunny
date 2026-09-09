@@ -8,10 +8,10 @@ namespace Apigen.Bunny.Core.Models;
 /// 1 = Compatible
 /// 2 = ModernOnly
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<TlsSecurityLevelType>))]
 public enum TlsSecurityLevelType
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
+    Legacy = 0,
+    Compatible = 1,
+    ModernOnly = 2,
 }

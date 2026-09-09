@@ -28,7 +28,7 @@ public partial class SourceCodeIntegrationModel
 {
   public long? IntegrationId { get; set; }
 
-  public object? RepositorySettings { get; set; }
+  public SourceCodeRepositorySettingsModel? RepositorySettings { get; set; }
 
-  public object? DeployConfiguration { get; set; }
+  public DeployConfigurationModel? DeployConfiguration { get; set; }
 }

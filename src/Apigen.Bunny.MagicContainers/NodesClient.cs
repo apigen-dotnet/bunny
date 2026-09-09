@@ -28,7 +28,7 @@ namespace Apigen.Bunny.MagicContainers;
 /// <summary>
 /// Client for Nodes operations
 /// </summary>
-public partial class NodesClient
+public partial class NodesClient : INodesClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

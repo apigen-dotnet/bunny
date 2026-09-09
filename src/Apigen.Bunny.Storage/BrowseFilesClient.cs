@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Storage;
 /// <summary>
 /// Client for Browse Files operations
 /// </summary>
-public partial class BrowseFilesClient
+public partial class BrowseFilesClient : IBrowseFilesClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

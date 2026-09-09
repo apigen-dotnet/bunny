@@ -11,7 +11,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 900 = PerFifteenMinutes
 /// 3600 = PerOneHour
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<WafRateLimitTimeframeType>))]
 public enum WafRateLimitTimeframeType
 {
     PerSecond = 1,

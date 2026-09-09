@@ -8,10 +8,10 @@ namespace Apigen.Bunny.Core.Models;
 /// 1 = MatchAll
 /// 2 = MatchNone
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<PatternMatchingTypes>))]
 public enum PatternMatchingTypes
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
+    MatchAny = 0,
+    MatchAll = 1,
+    MatchNone = 2,
 }

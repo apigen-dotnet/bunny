@@ -109,7 +109,7 @@ public partial class StorageZoneModel
   /// <summary>
   /// Determines the storage zone tier that is storing the data
   /// </summary>
-  public object? ZoneTier { get; set; }
+  public StorageZoneTier? ZoneTier { get; set; }
 
   /// <summary>
   /// Determines if the storage zone is currently enabling a new replication region
@@ -129,5 +129,5 @@ public partial class StorageZoneModel
   /// <summary>
   /// The Storage Zone S3 support type
   /// </summary>
-  public object? StorageZoneType { get; set; }
+  public StorageZoneS3Type? StorageZoneType { get; set; }
 }

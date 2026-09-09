@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for Statistics operations
 /// </summary>
-public partial class StatisticsClient
+public partial class StatisticsClient : IStatisticsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

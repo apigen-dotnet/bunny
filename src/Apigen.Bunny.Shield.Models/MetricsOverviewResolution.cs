@@ -12,7 +12,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 5 = Weekly
 /// 6 = Monthly
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<MetricsOverviewResolution>))]
 public enum MetricsOverviewResolution
 {
     Auto = 0,

@@ -15,7 +15,7 @@
   <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Apigen.Bunny'">
     <IsPackable>true</IsPackable>
     <PackageId>Apigen.Bunny</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Description>Generated C# clients for all eight bunny.net APIs in one package: Core, Origin Errors, CDN Logging, Storage, Stream, Shield, Edge Scripting and Magic Containers.</Description>
     <PackageTags>bunny;bunny-net;cdn;storage;stream;dns;containers;api;client;openapi;apigen</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>

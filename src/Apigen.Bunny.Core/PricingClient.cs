@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for Pricing operations
 /// </summary>
-public partial class PricingClient
+public partial class PricingClient : IPricingClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

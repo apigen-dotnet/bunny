@@ -7,9 +7,9 @@ namespace Apigen.Bunny.Core.Models;
 /// 0 = Automatic
 /// 1 = Manual
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<PermaCacheType>))]
 public enum PermaCacheType
 {
-    __0 = 0,
-    __1 = 1,
+    Automatic = 0,
+    Manual = 1,
 }

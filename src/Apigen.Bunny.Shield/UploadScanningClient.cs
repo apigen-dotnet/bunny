@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Shield;
 /// <summary>
 /// Client for Upload Scanning operations
 /// </summary>
-public partial class UploadScanningClient
+public partial class UploadScanningClient : IUploadScanningClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

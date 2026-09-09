@@ -8,10 +8,10 @@ namespace Apigen.Bunny.Core.Models;
 /// 1 = LoadBalancer
 /// 2 = PreCache
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<ExecutionPhase>))]
 public enum ExecutionPhase
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
+    Cache = 0,
+    LoadBalancer = 1,
+    PreCache = 2,
 }

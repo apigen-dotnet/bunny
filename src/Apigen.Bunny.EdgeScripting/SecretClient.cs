@@ -28,7 +28,7 @@ namespace Apigen.Bunny.EdgeScripting;
 /// <summary>
 /// Client for Secret operations
 /// </summary>
-public partial class SecretClient
+public partial class SecretClient : ISecretClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

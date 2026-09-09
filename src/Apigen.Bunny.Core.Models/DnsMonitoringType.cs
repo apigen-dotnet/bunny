@@ -9,11 +9,11 @@ namespace Apigen.Bunny.Core.Models;
 /// 2 = Http
 /// 3 = Monitor
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<DnsMonitoringType>))]
 public enum DnsMonitoringType
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
-    __3 = 3,
+    None = 0,
+    Ping = 1,
+    Http = 2,
+    Monitor = 3,
 }

@@ -20,7 +20,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 17 = DETECTSQLI
 /// 18 = DETECTXSS
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<WafRuleOperatorType>))]
 public enum WafRuleOperatorType
 {
     Beginswith = 0,

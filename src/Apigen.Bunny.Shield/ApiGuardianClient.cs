@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Shield;
 /// <summary>
 /// Client for API Guardian operations
 /// </summary>
-public partial class ApiGuardianClient
+public partial class ApiGuardianClient : IApiGuardianClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

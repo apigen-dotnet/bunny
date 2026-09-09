@@ -28,7 +28,7 @@ namespace Apigen.Bunny.EdgeScripting;
 /// <summary>
 /// Client for Edge Script operations
 /// </summary>
-public partial class EdgeScriptClient
+public partial class EdgeScriptClient : IEdgeScriptClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

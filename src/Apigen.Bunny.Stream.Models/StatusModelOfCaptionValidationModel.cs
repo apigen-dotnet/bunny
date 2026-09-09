@@ -45,5 +45,5 @@ public partial class StatusModelOfCaptionValidationModel
   public int? StatusCode { get; set; }
 
   [System.Text.Json.Serialization.JsonPropertyName("data")]
-  public object? Data { get; set; }
+  public CaptionValidationModel? Data { get; set; }
 }

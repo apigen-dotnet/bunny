@@ -197,17 +197,17 @@ public partial class VideoLibraryModel
   /// <summary>
   /// DRM version (basic or enterprise)
   /// </summary>
-  public object? DrmVersion { get; set; }
+  public DrmVersion? DrmVersion { get; set; }
 
   /// <summary>
   /// Described Apple FairPlay DRM
   /// </summary>
-  public object? AppleFairPlayDrm { get; set; }
+  public AppleFairPlayDrm? AppleFairPlayDrm { get; set; }
 
   /// <summary>
   /// Describes Google Widevine DRM
   /// </summary>
-  public object? GoogleWidevineDrm { get; set; }
+  public GoogleWidevineDrm? GoogleWidevineDrm { get; set; }
 
   /// <summary>
   /// The bitrate used for encoding 240p videos
@@ -266,7 +266,7 @@ public partial class VideoLibraryModel
   /// <summary>
   /// The type of the pull zone attached. Premium = 0, Volume = 1
   /// </summary>
-  public object? PullZoneType { get; set; }
+  public PullZoneType? PullZoneType { get; set; }
 
   /// <summary>
   /// The custom HTMl that is added into the head of the HTML player.
@@ -354,7 +354,7 @@ public partial class VideoLibraryModel
   /// <summary>
   /// Defines encoding tier to be used with video library. premium is a paid tier that offers either JIT encoding or prioritized encoding and extra codec support.
   /// </summary>
-  public object? EncodingTier { get; set; }
+  public EncodingTier? EncodingTier { get; set; }
 
   /// <summary>
   /// Specifies which video codecs are used for encoding, provided as a comma-separated (CSV) string. Free encoding tier supports only x264. A premium encoding tier adds support for vp9, hevc, and av1.

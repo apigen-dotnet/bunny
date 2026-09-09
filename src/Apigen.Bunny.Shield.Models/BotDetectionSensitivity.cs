@@ -9,7 +9,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 2 = Medium
 /// 3 = High
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<BotDetectionSensitivity>))]
 public enum BotDetectionSensitivity
 {
     Off = 0,

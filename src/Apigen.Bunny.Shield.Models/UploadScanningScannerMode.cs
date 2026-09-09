@@ -8,7 +8,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 1 = Log
 /// 2 = Block
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<UploadScanningScannerMode>))]
 public enum UploadScanningScannerMode
 {
     Disabled = 0,

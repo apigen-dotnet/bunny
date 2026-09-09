@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for Region operations
 /// </summary>
-public partial class RegionClient
+public partial class RegionClient : IRegionClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

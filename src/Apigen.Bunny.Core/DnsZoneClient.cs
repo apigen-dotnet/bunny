@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for DNS Zone operations
 /// </summary>
-public partial class DnsZoneClient
+public partial class DnsZoneClient : IDnsZoneClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

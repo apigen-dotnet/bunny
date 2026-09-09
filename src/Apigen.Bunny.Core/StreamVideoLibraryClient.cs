@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for Stream Video Library operations
 /// </summary>
-public partial class StreamVideoLibraryClient
+public partial class StreamVideoLibraryClient : IStreamVideoLibraryClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

@@ -8,10 +8,10 @@ namespace Apigen.Bunny.Core.Models;
 /// 1 = UserOverride
 /// 2 = ResourceOverride
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<AppliedPricingType>))]
 public enum AppliedPricingType
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
+    ListPrice = 0,
+    UserOverride = 1,
+    ResourceOverride = 2,
 }

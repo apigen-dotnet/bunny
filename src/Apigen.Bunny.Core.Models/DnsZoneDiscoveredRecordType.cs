@@ -18,20 +18,20 @@ namespace Apigen.Bunny.Core.Models;
 /// 15 = TLSA
 /// 16 = SOA
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<DnsZoneDiscoveredRecordType>))]
 public enum DnsZoneDiscoveredRecordType
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
-    __3 = 3,
-    __4 = 4,
-    __8 = 8,
-    __9 = 9,
-    __10 = 10,
-    __12 = 12,
-    __13 = 13,
-    __14 = 14,
-    __15 = 15,
-    __16 = 16,
+    A = 0,
+    Aaaa = 1,
+    Cname = 2,
+    Txt = 3,
+    MX = 4,
+    Srv = 8,
+    Caa = 9,
+    Ptr = 10,
+    NS = 12,
+    Svcb = 13,
+    Https = 14,
+    Tlsa = 15,
+    Soa = 16,
 }

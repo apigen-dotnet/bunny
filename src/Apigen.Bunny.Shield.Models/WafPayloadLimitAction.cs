@@ -8,7 +8,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 1 = Log
 /// 2 = Ignore
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<WafPayloadLimitAction>))]
 public enum WafPayloadLimitAction
 {
     Block = 0,

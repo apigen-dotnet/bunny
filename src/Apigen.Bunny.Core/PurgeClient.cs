@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for Purge operations
 /// </summary>
-public partial class PurgeClient
+public partial class PurgeClient : IPurgeClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

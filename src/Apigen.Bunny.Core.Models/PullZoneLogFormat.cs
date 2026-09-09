@@ -7,9 +7,9 @@ namespace Apigen.Bunny.Core.Models;
 /// 0 = Plain
 /// 1 = JSON
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<PullZoneLogFormat>))]
 public enum PullZoneLogFormat
 {
-    __0 = 0,
-    __1 = 1,
+    Plain = 0,
+    Json = 1,
 }

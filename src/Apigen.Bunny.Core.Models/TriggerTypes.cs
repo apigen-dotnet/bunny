@@ -19,21 +19,21 @@ namespace Apigen.Bunny.Core.Models;
 /// 12 = OriginRetryAttemptCount
 /// 13 = OriginConnectionError
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<TriggerTypes>))]
 public enum TriggerTypes
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
-    __3 = 3,
-    __4 = 4,
-    __5 = 5,
-    __6 = 6,
-    __7 = 7,
-    __8 = 8,
-    __9 = 9,
-    __10 = 10,
-    __11 = 11,
-    __12 = 12,
-    __13 = 13,
+    Url = 0,
+    RequestHeader = 1,
+    ResponseHeader = 2,
+    UrlExtension = 3,
+    CountryCode = 4,
+    RemoteIP = 5,
+    UrlQueryString = 6,
+    RandomChance = 7,
+    StatusCode = 8,
+    RequestMethod = 9,
+    CookieValue = 10,
+    CountryStateCode = 11,
+    OriginRetryAttemptCount = 12,
+    OriginConnectionError = 13,
 }

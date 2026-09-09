@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Storage;
 /// <summary>
 /// Client for Manage Files operations
 /// </summary>
-public partial class ManageFilesClient
+public partial class ManageFilesClient : IManageFilesClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

@@ -9,11 +9,11 @@ namespace Apigen.Bunny.Core.Models;
 /// 2 = DualStackPreferIPv6
 /// 3 = IPv6Only
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<IpFamilyPolicy>))]
 public enum IpFamilyPolicy
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
-    __3 = 3,
+    IPv4Only = 0,
+    DualStack = 1,
+    DualStackPreferIPv6 = 2,
+    IPv6Only = 3,
 }

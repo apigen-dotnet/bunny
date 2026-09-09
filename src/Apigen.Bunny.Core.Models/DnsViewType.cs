@@ -7,9 +7,9 @@ namespace Apigen.Bunny.Core.Models;
 /// 0 = Full
 /// 1 = Lite
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<DnsViewType>))]
 public enum DnsViewType
 {
-    __0 = 0,
-    __1 = 1,
+    Full = 0,
+    Lite = 1,
 }

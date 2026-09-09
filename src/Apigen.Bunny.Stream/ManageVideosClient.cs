@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Stream;
 /// <summary>
 /// Client for Manage Videos operations
 /// </summary>
-public partial class ManageVideosClient
+public partial class ManageVideosClient : IManageVideosClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

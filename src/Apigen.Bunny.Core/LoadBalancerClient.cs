@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for Load Balancer operations
 /// </summary>
-public partial class LoadBalancerClient
+public partial class LoadBalancerClient : ILoadBalancerClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

@@ -7,7 +7,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 0 = LogOnly
 /// 1 = Challenge
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<BotDetectionExecutionMode>))]
 public enum BotDetectionExecutionMode
 {
     LogOnly = 0,

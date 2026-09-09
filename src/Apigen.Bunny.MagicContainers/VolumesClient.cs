@@ -28,7 +28,7 @@ namespace Apigen.Bunny.MagicContainers;
 /// <summary>
 /// Client for Volumes operations
 /// </summary>
-public partial class VolumesClient
+public partial class VolumesClient : IVolumesClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

@@ -10,7 +10,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 4 = Allow
 /// 5 = Bypass
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<WafRuleActionType>))]
 public enum WafRuleActionType
 {
     Block = 1,

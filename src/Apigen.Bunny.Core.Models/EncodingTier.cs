@@ -7,9 +7,9 @@ namespace Apigen.Bunny.Core.Models;
 /// 0 = Free
 /// 1 = Premium
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<EncodingTier>))]
 public enum EncodingTier
 {
-    __0 = 0,
-    __1 = 1,
+    Free = 0,
+    Premium = 1,
 }

@@ -28,7 +28,7 @@ namespace Apigen.Bunny.MagicContainers;
 /// <summary>
 /// Client for AutoscalingSettings operations
 /// </summary>
-public partial class AutoscalingSettingsClient
+public partial class AutoscalingSettingsClient : IAutoscalingSettingsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

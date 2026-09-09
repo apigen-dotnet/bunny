@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Core;
 /// <summary>
 /// Client for Billing operations
 /// </summary>
-public partial class BillingClient
+public partial class BillingClient : IBillingClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

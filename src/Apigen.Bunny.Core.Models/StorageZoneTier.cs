@@ -7,9 +7,9 @@ namespace Apigen.Bunny.Core.Models;
 /// 0 = Standard
 /// 1 = Edge
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<StorageZoneTier>))]
 public enum StorageZoneTier
 {
-    __0 = 0,
-    __1 = 1,
+    Standard = 0,
+    Edge = 1,
 }

@@ -28,7 +28,7 @@ namespace Apigen.Bunny.Shield;
 /// <summary>
 /// Client for DDoS operations
 /// </summary>
-public partial class DDoSClient
+public partial class DDoSClient : IDDoSClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

@@ -9,11 +9,11 @@ namespace Apigen.Bunny.Core.Models;
 /// 2 = TCPEncrypted
 /// 3 = DataDog
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<PullZoneLogForwarderProtocolType>))]
 public enum PullZoneLogForwarderProtocolType
 {
-    __0 = 0,
-    __1 = 1,
-    __2 = 2,
-    __3 = 3,
+    Udp = 0,
+    Tcp = 1,
+    TcpEncrypted = 2,
+    DataDog = 3,
 }

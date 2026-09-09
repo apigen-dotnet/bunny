@@ -34,7 +34,7 @@ public partial class EdgeRuleV2Model
   /// <summary>
   /// The action type of the edge rule. ForceSSL = 0, Redirect = 1, OriginUrl = 2, OverrideCacheTime = 3, BlockRequest = 4, SetResponseHeader = 5, SetRequestHeader = 6, ForceDownload = 7, DisableTokenAuthentication = 8, EnableTokenAuthentication = 9, OverrideCacheTimePublic = 10, IgnoreQueryString = 11, DisableOptimizer = 12, ForceCompression = 13, SetStatusCode = 14, BypassPermaCache = 15, OverrideBrowserCacheTime = 16
   /// </summary>
-  public object? ActionType { get; set; }
+  public EdgeRuleActionType? ActionType { get; set; }
 
   /// <summary>
   /// The Action parameter 1. The value depends on other parameters of the edge rule.
@@ -58,7 +58,7 @@ public partial class EdgeRuleV2Model
   /// <summary>
   /// The trigger matching type. MatchAny = 0, MatchAll = 1, MatchNone = 2
   /// </summary>
-  public object? TriggerMatchingType { get; set; }
+  public TriggerMatchingTypes? TriggerMatchingType { get; set; }
 
   /// <summary>
   /// The description of the edge rule

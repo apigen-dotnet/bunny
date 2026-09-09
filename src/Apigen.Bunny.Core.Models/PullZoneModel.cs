@@ -66,7 +66,7 @@ public partial class PullZoneModel
   /// <summary>
   /// The phase of the request where the script will be executed
   /// </summary>
-  public object? EdgeScriptExecutionPhase { get; set; }
+  public ExecutionPhase? EdgeScriptExecutionPhase { get; set; }
 
   public long? MiddlewareScriptId { get; set; }
 
@@ -124,7 +124,7 @@ public partial class PullZoneModel
   /// <summary>
   /// Address-family policy: 0=IPv4Only, 1=DualStack, 2=DualStackPreferIPv6, 3=IPv6Only.
   /// </summary>
-  public object? IpFamilyPolicy { get; set; }
+  public IpFamilyPolicy? IpFamilyPolicy { get; set; }
 
   /// <summary>
   /// True if the URL secure token authentication security is enabled
@@ -174,7 +174,7 @@ public partial class PullZoneModel
   /// <summary>
   /// The type of the pull zone. Premium = 0, Volume = 1
   /// </summary>
-  public object? Type { get; set; }
+  public PullZoneType? Type { get; set; }
 
   /// <summary>
   /// The list of extensions that will return the CORS headers
@@ -375,7 +375,7 @@ public partial class PullZoneModel
   /// <summary>
   /// The minimum TLS security level enforced on the Pull Zone (Legacy = 0, Compatible = 1, ModernOnly = 2)
   /// </summary>
-  public object? TlsSecurityLevel { get; set; }
+  public TlsSecurityLevelType? TlsSecurityLevel { get; set; }
 
   /// <summary>
   /// Determines if the Pull Zone should verify the origin SSL certificate
@@ -436,7 +436,7 @@ public partial class PullZoneModel
   /// <summary>
   /// Determines the log forwarding protocol type
   /// </summary>
-  public object? LogForwardingProtocol { get; set; }
+  public PullZoneLogForwarderProtocolType? LogForwardingProtocol { get; set; }
 
   /// <summary>
   /// Determines if the permanent logging feature is enabled
@@ -525,7 +525,7 @@ public partial class PullZoneModel
   /// <summary>
   /// Determines if Markdown automatic generation for AI systems is enabled and which pipeline to use
   /// </summary>
-  public object? OptimizerHtmlToMarkdown { get; set; }
+  public OptimizerHtmlToMarkdownType? OptimizerHtmlToMarkdown { get; set; }
 
   /// <summary>
   /// Determines if the llms.txt file can be generated and served by the Optimizer
@@ -561,7 +561,7 @@ public partial class PullZoneModel
   /// <summary>
   /// Sets the position of the watermark image
   /// </summary>
-  public object? OptimizerWatermarkPosition { get; set; }
+  public OptimizerWatermarkPosition? OptimizerWatermarkPosition { get; set; }
 
   /// <summary>
   /// Sets the offset of the watermark image
@@ -586,7 +586,7 @@ public partial class PullZoneModel
   /// <summary>
   /// Determines Perma-Cache behavior
   /// </summary>
-  public object? PermaCacheType { get; set; }
+  public PermaCacheType? PermaCacheType { get; set; }
 
   /// <summary>
   /// The number of retries to the origin server
@@ -709,7 +709,7 @@ public partial class PullZoneModel
   /// <summary>
   /// Gets the log anonymization type for this pull zone
   /// </summary>
-  public object? LogAnonymizationType { get; set; }
+  public LogAnonymizationType? LogAnonymizationType { get; set; }
 
   /// <summary>
   /// 0 = Plain
@@ -735,7 +735,7 @@ public partial class PullZoneModel
   /// <summary>
   /// The type of the origin for this Pull Zone
   /// </summary>
-  public object? OriginType { get; set; }
+  public PullZoneOriginType? OriginType { get; set; }
 
   /// <summary>
   /// Determines if request coalescing is currently enabled.
@@ -789,7 +789,7 @@ public partial class PullZoneModel
   /// <summary>
   /// The currently configured preloading screem theme. (0 - Light, 1 - Dark)
   /// </summary>
-  public object? PreloadingScreenTheme { get; set; }
+  public PreloadingScreenTheme? PreloadingScreenTheme { get; set; }
 
   /// <summary>
   /// The delay in miliseconds after which the preloading screen will be desplayed
@@ -830,7 +830,7 @@ public partial class PullZoneModel
   /// <summary>
   /// Whether to use a Sticky Session mechanism for this pull zone
   /// </summary>
-  public object? StickySessionType { get; set; }
+  public StickySessionType? StickySessionType { get; set; }
 
   /// <summary>
   /// Sticky Session Cookie Name

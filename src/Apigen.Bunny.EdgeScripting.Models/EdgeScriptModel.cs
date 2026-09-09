@@ -47,7 +47,7 @@ public partial class EdgeScriptModel
 
   public List<LinkedPullZone>? LinkedPullZones { get; set; }
 
-  public object? Integration { get; set; }
+  public SourceCodeIntegrationModel? Integration { get; set; }
 
   public string? DefaultHostname { get; set; }
 

@@ -72,7 +72,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 510 = NotExtended
 /// 511 = NetworkAuthenticationRequired
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<HttpStatusCode>))]
 public enum HttpStatusCode
 {
     Continue = 100,

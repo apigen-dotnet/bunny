@@ -14,7 +14,7 @@ namespace Apigen.Bunny.Shield.Models;
 /// 7 = Social
 /// 255 = System
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonNumberEnumConverter<BotCategory>))]
 public enum BotCategory
 {
     None = 0,

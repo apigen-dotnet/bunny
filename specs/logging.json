@@ -5,6 +5,12 @@
     "description": "Access raw request logs via API with up to 3 days retention. Two API versions are available: v1 (legacy pipe-delimited) and v2 (structured JSON with rich filtering and pagination).",
     "version": "v2"
   },
+  "servers": [
+    {
+      "url": "https://logging.bunnycdn.com",
+      "description": "Production"
+    }
+  ],
   "paths": {
     "/{date}/{pullZoneId}.log": {
       "get": {
@@ -254,7 +260,7 @@
             }
           },
           "401": {
-            "description": "Authentication credentials missing.",
+            "description": "Authentication credentials missing, or the scoped API key is invalid or expired.",
             "content": {
               "application/json": {
                 "schema": {
@@ -264,7 +270,7 @@
             }
           },
           "403": {
-            "description": "Authentication failed or pull zone not accessible.",
+            "description": "Authentication failed, pull zone not accessible, or the scoped API key lacks permission.",
             "content": {
               "application/json": {
                 "schema": {
